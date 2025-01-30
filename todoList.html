@@ -1,0 +1,128 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body{
+                height:100%;
+                width:100%;
+                background-color: rgb(183, 207, 228);
+                display: flex;
+                justify-content: center;
+            }
+            .main{
+                /* background-color:lightblue ; */
+                height:100px;
+                margin-top:60px;
+                width:70%
+            }
+            .list{
+                /* text-align: center; */
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                height:80px;
+                background-color:white;
+                padding:50px
+            }
+            #todo{
+                width:400px;
+                height:30px;
+                border-radius: 4px;
+                border:1px solid rgb(0, 0, 0);
+                background-color:#c1c1c1;
+                color : rgb(4, 40, 66)
+
+            }
+            #todo::placeholder{
+                color:rgb(115, 109, 109);
+                font-size: 15px;
+                padding-left:6px;
+            }
+            button{
+                height:35px;
+                width:90px;
+                margin-left: 8px;
+                background-color: rgb(114, 148, 222);
+                border : 2px solid rgb(3, 26, 77);
+                border-radius: 3px;
+                cursor: pointer;
+                color:rgb(255, 255, 255);
+                font-size: large;
+            }
+            .Boxes{
+                
+                /* text-align: center; */
+                background-color: aliceblue;
+                height:40px;
+                display: flex;
+                align-items: center;
+                padding-left: 240px;
+                border : 2px solid rgb(3, 3, 83);
+                border-radius: 2px;
+                margin-top:20px;
+            }
+            .Boxes input{
+                cursor: pointer;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <script>
+        
+            
+            function function1()
+            {
+                const todo = document.getElementById("todo");
+                const content = document.getElementById("content");
+
+                if (todo.value.trim() === "") {
+                return; 
+            }
+
+                let  newBox = document.createElement("input");
+                newBox.type = "checkbox";
+
+                let newLabel = document.createElement("label");
+                newLabel.innerHTML = todo.value;
+
+                newBox.addEventListener('change' ,function(){
+                    if(newBox.checked)
+                {
+                    newLabel.style.textDecoration = 'line-through';
+                }
+                else{
+                    newLabel.style.textDecoration = 'none'
+                }
+                })
+                let taskDiv = document.createElement('div');
+
+                taskDiv.classList.add("Boxes")
+                taskDiv.appendChild(newBox);
+                taskDiv.appendChild(newLabel);
+                content.appendChild(taskDiv);
+
+               todo.value = '';
+               
+                
+            }
+
+        </script>
+
+
+
+    <div class="main">
+            <div class="list">
+                <input type="text" id="todo" placeholder = "Add Task" > 
+                <button onclick="function1()">Add</button>
+            </div>
+            <div id="content">
+                
+            </div>
+            
+    </div>
+    </body>
+    </html>
