@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some Random</title>
+    <style>
+        #b1{
+            height:40px;
+            width:150px;
+            animation: borderColorChange 2s infinite alternate;
+            border:3px solid transparent;
+            background-color: aquamarine;
+            
+        }
+
+        body,html{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            /* background-color: #FAEBD7; */
+        }
+        h3{
+            background-color: rgb(14, 42, 77);   
+            color:white;
+            height:30px;
+            padding-top:10px;
+            width:350px;
+            text-align: center;
+            animation: borderColorChange 2s infinite alternate;
+            border:3px solid transparent;
+        }
+        @keyframes borderColorChange {
+    0% {
+        border-color: red;
+    }
+    25% {
+        border-color: blue;
+    }
+    50% {
+        border-color: green;
+    }
+    75% {
+        border-color: yellow;
+    }
+    100% {
+        border-color: purple;
+    }
+}
+
+    </style>
+    
+    <script>
+        const b1 = document.getElementById("b1");
+        let hex = [1,2,3,4,5,6,7,8,9,0,'A','B','C','D','E'];
+        let i=0;
+       
+        function myFunction()
+        {
+            let colored = '#';
+         for(i=0;i<6;i++)
+        {
+            colored = colored+hex[Math.floor(Math.random()*15)];
+        }   
+        document.body.style.backgroundColor = colored
+        console.log(colored);
+        const rangu = document.getElementById("rangu");
+        rangu.textContent = colored;
+        }
+        
+
+    </script>
+</head>
+<body>
+    <h3>Background Color : <span id="rangu">#FAEBD7</span></h3>
+    <button id="b1" onclick="myFunction()">Click Me!</button>
+</body>
+</html>
