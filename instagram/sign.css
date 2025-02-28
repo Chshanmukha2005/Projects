@@ -1,0 +1,110 @@
+.header{
+    height:100%;
+    width:100%;
+}
+.main,.main1,.main2{
+    justify-content: center;
+    border:1px solid rgb(185, 185, 185);
+    text-align: center;
+    margin:auto;
+    width:400px;
+}
+.main1{
+    margin-top: 12px;
+    height:60px
+}
+.main2 {
+    margin-top:20px;
+    border:none;
+    display: flex;
+}
+#img1{
+    margin-right: 15px;
+}
+
+.content{
+    color:rgb(141, 141, 141);
+    font-family:  Helvetica ;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+#something{
+    margin-top: -11px;
+}
+#face{
+    width: 270px;
+    background-color: rgb(54, 130, 218);
+    height: 35px;
+    border: none;
+    border-radius: 7px;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    /* margin-bottom: 15px; */
+}
+#face:hover{
+    background-color:rgb(32, 109, 196); 
+}
+.or{
+    margin:30px;
+    color:rgb(179, 179, 179);
+    font-weight: 100;
+}
+.left{
+    border: 1px solid;
+    width:100px;
+    margin-bottom: -25px;
+    margin-left: 40px;
+    border-color: rgb(216, 216, 216);
+}
+.right{
+    border:1px solid;
+    width: 100px;
+    margin-top: -27px;
+    margin-left: 205px;
+    border-color: rgb(216, 216, 216);
+
+}
+input{
+    border-radius: 2px;
+    margin: 3px;
+    width: 250px;
+    height: 30px;
+    background-color: rgba(240, 239, 239, 0.767);
+    border:0.8px solid grey;
+}
+a{
+    text-decoration: none;
+    color: rgb(71, 116, 241);
+}
+.content1 p{
+    color: rgb(122, 119, 119);
+    font-size: 14px;
+}
+.content2 p{
+    color: rgb(122, 119, 119);
+    font-size: 14px;
+}
+#up{
+    width:257px;
+    height:29px;
+    background-color:rgb(63, 199, 253);
+    border:none;
+    border-radius: 6px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    color:white;
+    font-weight: 400;
+}
+#up:hover{
+    background-color:rgb(3, 106, 224);
+    transition:0.8s;
+}
+.footer{
+    width:100%;
+    text-align: center;
+    color:grey;
+    /* font-family: 'Lucida Sans'; */
+    margin-top:60px;
+}

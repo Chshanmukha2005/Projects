@@ -1,0 +1,138 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+.back{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("1.png");
+    height:100%;
+    width:100%;
+    background-position:center ;
+    background-size: cover;
+}
+.logo{
+    color:aliceblue;
+    position: center;
+   padding-left:180px;
+   padding-top: 20px;
+   display: flex;
+   justify-content: space-between;
+
+}
+.logo1{
+    
+    color: rgb(229, 9, 20);
+    font-weight: 600;
+    font-size: 40px;
+
+
+}
+.sign{
+    padding:7px;
+    
+    width: 80px;
+    background-color: bisque;
+    border-radius: 5px;
+    vertical-align:bottom;
+    align-items: center;
+    
+    color: white;
+    background-color:rgb(229, 9, 20); 
+    cursor:pointer
+}
+.sign1{
+    padding-right: 180px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.search{
+margin-top: 30px;
+   width:580px
+}
+.search1{
+    padding: 20px;
+    width:400px;
+    border-radius:5px;
+    border-color: white;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    color:aliceblue;
+    display: inline-block;
+
+   
+}
+.content{
+    /* margin-top: 200px;
+    margin-left: 350px; */
+    text-align: center;
+    display: inline-block;
+    color: aliceblue;
+    font-size: 30px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top: 180px;
+    
+}
+.para{
+    font-size: 25;
+    margin-top: 20px;
+}
+.get{
+    display:inline-block ;
+    
+
+}
+.get1{
+    padding: 18px;
+    border-radius:5px;
+    background-color:rgb(229, 9, 20); 
+    color:white;
+    cursor:pointer;
+    width:150px;
+    font-weight: bold;
+    font-size: 16;
+  
+}
+.c1{
+    font-size: 70px;
+    margin-left: 160px;
+    padding-top: 370px;
+    justify-content: center;
+}
+.c2{
+    color:white;
+    margin-left: 160px;
+    font-size: 30px;
+    font-family: roboto;
+
+}
+.c3{
+    display:inline-block;
+}
+.c4{
+    padding-top:0px;
+    margin-top:0px;
+    display:inline-block;
+}
+.c5{
+    padding-left:70px ;
+   
+    /* margin-top: 180px; */
+     display:inline-block;
+     /* display: flex; */
+     width:30%;
+     /* padding-top: 200px; */
+     height: 60%;
+     
+}
+.c8{
+    display: inline-block;
+    font-size: 20px;
+    color:white;
+}
+.inner-container{
+    display: inline-block;
+    
+}
