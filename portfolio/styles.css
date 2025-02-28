@@ -1,0 +1,392 @@
+body,html{
+    margin:0px;
+    /* height:600%; */
+    background-image: linear-gradient(to right, #E2F3F4,#6DC7D1);
+    /* background-color: #E2F3F4; */
+    overflow:auto;
+  }
+  
+  .blended-text {
+    background: linear-gradient(to right, #105090, #0d2247);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 36px; /* Adjust the font size as needed */
+  }
+.markazi-text{
+  font-family: "Markazi Text", serif;
+  font-optical-sizing: auto;
+  font-weight: 300px;
+  font-style: normal;
+}
+  .ran{
+    font-family: "Lavishly Yours";
+  }
+  
+  .nav-bar{
+    display: flex;
+    width:100%;
+    height:60px;
+    margin-top: 3px;
+    box-shadow: 2px 2px 10px 0.2px rgb(0, 0, 0);
+    justify-content: end;
+    align-items: center;
+    background-color:rgba(255, 248, 248, 0.8);
+    
+}
+.nav-elements{
+    /* justify-content: end; */
+    display: flex;
+    gap:16px;   
+    font-size:18px;
+    padding-right: 50px;
+}
+.nav-elements a{
+    text-decoration: none;
+    padding:4px;
+    color:#640014;
+    font-weight: 660;
+}
+.myself{
+    display: flex;
+    margin-top: 20px;
+    /* border:2px solid red; */
+}
+.description{
+    /* line-height:; */
+    font-size: 25px;
+    width: 50%;
+  
+    /* border:2px solid black; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    height:500px;
+    margin-left: 50px;
+    /* margin-top: -50px; */
+    /* text-align: center; */
+
+    
+}
+.lineh{
+    margin: 4px 0px;
+}
+.Typing{
+    display: inline-block;
+    font-size: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    color:#503b06;
+    border-right: 6px solid #000; /* Simulates the cursor */
+    padding-right: 5px;
+    animation: typing 3s steps(21) alternate-reverse infinite;
+    /* , 3s steps(20)  infinite; */
+    margin-bottom: -14px;
+  }
+  
+  /* Keyframes for typing effect */
+  @keyframes typing {
+    0% {
+      width: 0ch;
+    }
+    100% {
+      width: 21ch;
+    }
+  }
+   .resume
+   {
+    width: 150px;
+    padding: 5px;
+    border-radius: 75px;
+    cursor: pointer;
+    margin-left: 6px;
+    margin-top:30px;
+    transition: 0.5s ;
+    background-color:#39106f;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+    
+   }
+   .resume:hover{
+    box-shadow: 3px 3px 3px #5f81d1;
+   }
+ 
+.icons{
+    margin-left: 4px;
+    width: 100%;
+    /* text-align: center; */
+    margin-top: 30px;
+}
+.icon-large{
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.photo{
+    width:50%;
+    height: 500px;
+    /* border:2px solid blue; */
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.pic{
+    width:50%;
+    /* height:300px; */
+    border-radius: 20px;
+    margin-left: -200px;
+    transition:0.5s 
+
+}
+.pic:hover{
+  box-shadow: 2px 2px 10px #024041;
+
+}
+.about{
+  margin-top: 5px;
+  height: 450px;
+  color: #0c4e4f;
+  /* border: 2px solid green; */
+}
+.about h1{
+  transition: 0.8s;
+
+}
+.about h1:hover{
+  text-decoration: underline;
+
+}
+.about p{
+  font-size: 35px;
+  font-family: "Markazi Text", serif;
+  text-align: center;
+  margin:0px 60px;
+  color: #0c2b63;
+}
+
+.hline{
+  width:95%;
+  height:3px;
+  background-color: #0c4e4f;
+  margin: 60px 0px;
+  margin-left: 2.5%;
+}
+.skills{
+  text-align: center;
+}
+
+.skill{
+  text-align: center;
+  margin: 60px 0px;
+  /* height: ; */
+  /* z-index: -1; */
+  font-size: 60px;
+  color: #0c4e4f;
+  position: relative;
+  transform: 2s;
+}
+h1.scaling{
+  transition-property:transform;
+  transition-timing-function: linear;
+  transition-duration:1s;
+  margin: 40px 0px;
+}
+.scaling:hover{
+  transform: scale(1.2);
+}
+
+.logos{
+  width:auto;
+  height:50px;
+  margin-left: 60px;
+  transition: 0.8s;
+  
+}
+.logos:hover{
+  transform: scale(1.2);
+  box-shadow: 2px 2px 10px rgb(172, 166, 166);
+}
+
+/* General Styles for All Screens */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+.projects{
+  display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+  /* margin: 50px; */
+  /* justify-content: space-evenly;
+  gap: 50px ; */
+}
+.p{
+  width:400px;
+  border:4px solid rgb(110, 66, 11);
+  object-fit: contain;
+   margin: 50px;
+   transition: 0.8s;
+
+}
+.p:hover{
+  transform: scale(1.05);
+  box-shadow:1px 2px 10px #105090;
+}
+
+.p img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+ 
+}
+.projects a{
+  cursor: pointer;
+}
+
+@media (min-width: 1025px) {
+  .container {
+      max-width: 1200px;
+      margin: auto;
+  }
+}
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  .nav-bar {
+      height: 50px;
+  }
+
+  .nav-elements {
+      gap: 10px;
+      padding-right: 20px;
+  }
+
+  .nav-elements a {
+      font-size: 14px;
+  }
+
+  .myself {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .description {
+      width: 80%;
+      margin-left: 0;
+      font-size: 20px;
+      height: auto;
+  }
+
+  .photo {
+      width: 80%;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+  }
+
+  .pic {
+      width: 70%;
+      margin-left: 0;
+  }
+
+  .about p {
+      font-size: 20px;
+      margin: 0 40px;
+  }
+
+  .logos {
+      margin-left: 30px;
+      height: 40px;
+  }
+
+  .projects {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+  .nav-bar {
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+  }
+
+  .nav-elements {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px 0;
+  }
+
+  .nav-elements a {
+      font-size: 16px;
+      display: block;
+      padding: 10px 0;
+  }
+
+  .myself {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .description {
+      width: 90%;
+      font-size: 18px;
+      height: auto;
+  }
+
+  .Typing {
+      font-size: 30px;
+  }
+
+  .resume {
+      width: 120px;
+      font-size: 14px;
+  }
+
+  .icons {
+      text-align: center;
+  }
+
+  .photo {
+      width: 90%;
+  }
+
+  .pic {
+      width: 90%;
+      margin-left: 0;
+  }
+
+  .about p {
+      font-size: 18px;
+      margin: 0 20px;
+  }
+
+  .hline {
+      width: 90%;
+      margin-left: 5%;
+  }
+
+  .logos {
+      height: 35px;
+      margin-left: 15px;
+  }
+
+  .skill {
+      font-size: 40px;
+  }
+
+  .projects {
+      grid-template-columns: repeat(1, 1fr);
+  }
+
+  .p {
+      width: 90%;
+      margin: 20px auto;
+  }
+}

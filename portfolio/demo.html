@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing and Backspace Effect</title>
+  <link rel="stylesheet" href="styles.css">4
+
+  <style>
+    /* Basic styling for the body */
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Paragraph styling */
+.paragraph {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Typing effect styling */
+.typing-effect {
+  display: inline-block;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 8px solid #000; /* Simulates the cursor */
+  padding-right: 5px;
+  animation: typing 4s steps(40) infinite, backspace 4s steps(40) 4s infinite;
+}
+
+/* Keyframes for typing effect */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* Keyframes for backspacing effect */
+@keyframes backspace {
+  0%, 50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="paragraph">
+    This is a sample paragraph with a typing effect: 
+    <span class="typing-effect">Hello, this is the typing effect!</span>
+  </div>
+</body>
+</html>
