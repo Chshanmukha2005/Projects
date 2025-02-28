@@ -1,0 +1,70 @@
+body,html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: azure;
+    width:100%;
+}
+.btns{
+    display: grid;
+    gap: 5px;
+    grid-template-columns:auto auto auto auto;
+}
+.btn{
+    padding: 35px;
+    background-color:beige;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: large;
+}
+.btn:hover{
+    box-shadow: 2px 2px 10px grey;
+}
+.cls{
+    height: 100px;
+    width:50px;
+}
+#in{
+    width:400px;
+    height:35px;
+    margin-bottom:20px;
+    font-size: large;
+    text-align: right;
+}
+@media (max-width: 600px) {
+    .calculator {
+        width: 95%;
+        max-width: 350px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    #in {
+        font-size: 1.2rem;
+        height: 45px;
+    }
+
+    .btn {
+        padding: 15px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .calculator {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .btn {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
